@@ -1,0 +1,69 @@
+html {
+	background-color: rgb(44, 43, 43);
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.title {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 100;
+	color: rgb(243, 237, 237);
+	line-height: 1.2;
+	letter-spacing: 2px;
+}
+// .home-title-name {
+// 	font-family: "Josefin Sans", sans-serif;
+// }
+
+.container {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+}
+.hello {
+	width: 20px;
+	height: 20px;
+}
+.home {
+	display: flex;
+	justify-content: center;
+	padding-top: 150px;
+	@media screen and (max-width: 700px) {
+flex-direction: column-reverse;
+	}
+}
+.photo {
+	width: 400px;
+	background-color: rgba(95, 67, 67, 0.212);
+	border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	// height: 400px;
+	order: 1;
+	justify-self: center;
+	animation: profile__animate 8s ease-in-out infinite 1s;
+  @media screen and (max-width: 500px) {
+    width: 300px;
+      }
+      @media screen and (max-width: 350px) {
+        width: 250px;
+          }
+}
+
+@keyframes profile__animate {
+	0% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+	}
+
+	100% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	}
+}
+.home__social {
+	padding-top: 20px;
+}
+.home__social-icon {
+	padding-right: 20px;
+}

@@ -1,0 +1,14 @@
+.header {
+    background-color:  rgb(44, 43, 43) ;
+ 
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    z-index: 2;
+top: 0;
+    height: 5%;
+    width: 100%;
+    margin: 0;
+}

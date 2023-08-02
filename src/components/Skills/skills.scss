@@ -1,0 +1,33 @@
+.section__title {
+	padding-top: 0px;
+	text-align: center;
+	&::before {
+		position: absolute;
+		// top: 70px;
+		content: "";
+		background: rgb(228, 226, 226);
+		width: 105px;
+		height: 1px;
+		bottom: -20px;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+}
+.skills-container {
+	padding: 20px;
+	margin-top: 150px;
+	width: 95%;
+	// height: 700px;
+	background-color: rgb(29, 28, 28);
+    border-radius: 25px;
+}
+
+.skills-item-container{
+    display: flex;
+    padding-top: 100px;
+    gap: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+

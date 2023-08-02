@@ -1,0 +1,31 @@
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 100px;
+	width: 400px;
+
+	@media screen and (max-width: 500px) {
+		width: 250px;
+		  }
+}
+.form_input {
+	padding: 15px;
+	margin-bottom: 20px;
+	outline: none;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 15px;
+	background-color: rgb(29, 28, 28);
+	caret-color: white;
+	color: #fff;
+	&::placeholder {
+		color: rgb(99, 98, 98);
+	}
+}
+
+.form_testarea{
+    height: 153px;
+}
+.form_button{
+    margin: 0 auto;
+}
