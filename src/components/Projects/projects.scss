@@ -1,5 +1,9 @@
 .projects-container{
     padding: 25px;
+    @media screen and (max-width: 500px) {
+padding: 0;
+        
+		  }
 }
 .project-items{
     padding-top: 100px;

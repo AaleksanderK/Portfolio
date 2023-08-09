@@ -33,6 +33,7 @@ const Contact = () => {
 	return (
 		<div className="container">
 			<motion.div
+				id="contact"
 				viewport={{ amount: 0.2 }}
 				initial="hidden"
 				whileInView="visible"

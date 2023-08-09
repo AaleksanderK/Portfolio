@@ -14,17 +14,17 @@ const Projects: FC<IprojectProps> = ({ data }) => {
 	return (
 		<div className="container">
 			<motion.div
+				
 				viewport={{ amount: 0.2 }}
 				initial="hidden"
 				whileInView="visible"
+				id="projects"
 				className="projects-container">
 				<motion.h2 variants={titleAnimation} className="section__title title">
 					My Projects
 				</motion.h2>
 				<div className="project-items">
-					{/* <ProjectItem image={pinterest} />
-            <ProjectItem image={pinterest} />
-            <ProjectItem image={pinterest} /> */}
+		
 					{data.map((el) => (
 						<ProjectItem
 							image={el.image}

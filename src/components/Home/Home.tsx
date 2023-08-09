@@ -3,6 +3,7 @@ import { Button } from "../Button/Button";
 import { GitHubIcon } from "../../assets/IconsSocial/GithubIcon";
 import { LinkedInIcon } from "../../assets/IconsSocial/LinkedInIcon";
 import { TelegramIcon } from "../../assets/IconsSocial/TelegramIcon";
+import CV from '../../assets/cv.pdf'
 import "./home.scss";
 import { textAnimation } from "../../types/animation";
 
@@ -37,7 +38,7 @@ export const Home = () => {
                     </motion.h2>
                     <motion.div custom={4} variants={textAnimation} className="home__social">
 
-					<Button />
+					<a download='' href={CV}  className="button-86" role="button">Download CV</a>
 					<motion.div custom={4} variants={textAnimation} className="home__social">
 						<a
 							href="https://github.com/AaleksanderK"

@@ -10,7 +10,7 @@
 		display: flex;
         flex-direction: column;
         align-items: center;
-        
+        width: 290px;
 		  }
 }
 .project-img{
@@ -38,6 +38,7 @@ font-size: 14px;
 a{
     text-decoration: none;
     color: #FFFFFF;
+
 }
 
 
@@ -81,6 +82,10 @@ a{
     white-space: nowrap;
     // left: 35%;
     // top: 30%;
+    @media screen and (max-width: 500px) {
+      padding: 15px;
+          
+        }
   }
   
   .button-48:before {

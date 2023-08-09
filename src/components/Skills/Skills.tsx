@@ -16,7 +16,8 @@ import { titleAnimation } from '../../types/animation';
 const Skills = () => {
     return (<div className='container'>
         <motion.div   viewport={{ amount: 0.2 }}
-				initial="hidden"
+			initial="hidden"
+			id='skills'
 				whileInView="visible" className="skills-container">
 
 			<motion.h2 variants={titleAnimation} className="section__title title">Skills</motion.h2>
