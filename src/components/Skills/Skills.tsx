@@ -10,20 +10,8 @@ import html from '../../assets/skills/html.svg'
 import react from '../../assets/skills/react.svg'
 import redux from '../../assets/skills/redux.svg'
 import webpack from '../../assets/skills/webpack.svg'
-// import reduxSaga from '../../assets/skills/redux-saga.svg'
-
-
-const textAnimation = {
-	hidden: {
-		y: 0,
-		opacity: 0,
-	},
-	visible:{
-		y: 50,
-		opacity: 1,
-	 
-	},
-};
+import { titleAnimation } from '../../types/animation';
+ 
 
 const Skills = () => {
     return (<div className='container'>
@@ -31,7 +19,7 @@ const Skills = () => {
 				initial="hidden"
 				whileInView="visible" className="skills-container">
 
-			<motion.h2 variants={textAnimation} className="section__title title">Skills</motion.h2>
+			<motion.h2 variants={titleAnimation} className="section__title title">Skills</motion.h2>
 			<div className='skills-item-container'>
 			<SkillItem title={'JavaScript'} image={js}/>
 			<SkillItem title={'TypeScript'} image={ts}/>

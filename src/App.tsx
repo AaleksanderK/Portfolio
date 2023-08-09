@@ -4,6 +4,8 @@ import { Home } from './components/Home/Home';
 import Header from './components/Header/Header';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
+import { Data } from './components/Projects/ProjectItem/constants';
  
  
 function App() {
@@ -13,8 +15,8 @@ function App() {
       <MainBackground />
       <Home />
       <Skills/>
+       <Projects data={Data}/>
       <Contact/>
-      <Skills/>
      
 
     </div>

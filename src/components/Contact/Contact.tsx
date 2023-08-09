@@ -2,29 +2,11 @@ import emailjs from "@emailjs/browser";
 import "./contact.scss";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { buttonAnimation, titleAnimation } from "../../types/animation";
 
-const textAnimation = {
-	hidden: {
-		y: 0,
-		opacity: 0,
-	},
-	visible: {
-		y: 50,
-		opacity: 1,
-	},
-};
+ 
 
-const buttonAnimation = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	visible: (custom: any) => ({
-		x: 0,
-		opacity: 1,
-		transition: { delay: custom * 0.2 },
-	}),
-};
+
 
 const Contact = () => {
 	const form = useRef<any>();
@@ -55,7 +37,7 @@ const Contact = () => {
 				initial="hidden"
 				whileInView="visible"
 				className="contact-container">
-				<motion.h2 variants={textAnimation}  className="section__title title">Contact</motion.h2>
+				<motion.h2 variants={titleAnimation}  className="section__title title">Contact</motion.h2>
 
 				<motion.form variants={buttonAnimation} custom={2} ref={form} onSubmit={sendEmail} className="form-container">
 				 

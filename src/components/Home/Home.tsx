@@ -4,30 +4,9 @@ import { GitHubIcon } from "../../assets/IconsSocial/GithubIcon";
 import { LinkedInIcon } from "../../assets/IconsSocial/LinkedInIcon";
 import { TelegramIcon } from "../../assets/IconsSocial/TelegramIcon";
 import "./home.scss";
+import { textAnimation } from "../../types/animation";
 
-const textAnimation = {
-	hidden: {
-		x: -100,
-		opacity: 0,
-	},
-	visible: (custom: any) => ({
-		x: 0,
-		opacity: 1,
-		transition: { delay: custom * 0.2 },
-	}),
-};
 
-// const imageAnimation = {
-//     hidden: {
-// 		x: 100,
-// 		opacity: 0,
-// 	},
-// 	visible: (custom: any) => ({
-// 		x: 0,
-// 		opacity: 1,
-// 		transition: { delay: custom * 0.2 },
-// 	}),
-// }
 
 
 export const Home = () => {

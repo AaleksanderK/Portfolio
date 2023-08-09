@@ -8,7 +8,6 @@ type skillType = {
 
 const SkillItem: React.FC<skillType> = ({title, image})=> {
     return ( <div className='skill'>
-        <div className='icon'></div>
         <h3 className='title'>{title}</h3>
         <img className='imgContainer' src={image} alt={'skill'}></img>
     </div> );
