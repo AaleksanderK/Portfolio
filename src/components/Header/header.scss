@@ -18,6 +18,9 @@ top: 0;
 .header-nav{
     display: flex;
     gap: 25px;
+    @media screen and (max-width: 500px) {
+		padding-top: 10px;
+		  }
 }
 
 
